@@ -1,0 +1,32 @@
+{
+	"contributes": {
+		"grammars": [
+			{
+				"language": "javascript",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"_embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
+				}
+			},
+			{
+				"language": "javascriptreact",
+				"scopeName": "source.js",
+				"path": "./syntaxes/sublime-babel.json",
+				"_embeddedLanguages": {
+					"meta.jsx.js": "jsx-tags",
+					"meta.tag.jsx": "jsx-tags",
+					"meta.tag.js": "jsx-tags",
+					"meta.tag.without-attributes.js": "jsx-tags"
+				}
+			},
+			{
+				"scopeName": "source.regexp.js",
+				"path": "./syntaxes/regex.json"
+			}
+		]
+	},
+}
