@@ -1,0 +1,31 @@
+{
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.openNativeTerminal",
+				"title": "Open in Terminal"
+			},
+			{
+				"command": "extension.openNativeTerminalOnRootFolder",
+				"title": "Open in native terminal (root folder)"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "extension.openNativeTerminal",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "extension.openNativeTerminalOnRootFolder",
+					"when": "editorHasSelection"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "extension.openNativeTerminal"
+				}
+			]
+		}
+	}
+}

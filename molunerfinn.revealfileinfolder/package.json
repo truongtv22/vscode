@@ -1,0 +1,32 @@
+{
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.revealFileInFolder",
+				"title": "Show in Folder"
+			},
+			{
+				"command": "extension.revealFileInSidebar",
+				"title": "Show in Sidebar"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.revealFileInFolder",
+					"when": "editorFocus",
+					"group": "navigation"
+				},
+				{
+					"command": "extension.revealFileInSidebar",
+					"when": "editorFocus",
+					"group": "navigation"
+				}
+			]
+		}
+	}
+}
