@@ -4,10 +4,6 @@
 			{
 				"command": "extension.openNativeTerminal",
 				"title": "Open in Terminal"
-			},
-			{
-				"command": "extension.openNativeTerminalOnRootFolder",
-				"title": "Open in native terminal (root folder)"
 			}
 		],
 		"menus": {
