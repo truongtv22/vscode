@@ -1,11 +1,6 @@
 {
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.openNativeTerminal",
-				"title": "Open in Terminal"
-			}
-		],
+		"commands": [],
 		"menus": {
 			"commandPalette": [
 				{
