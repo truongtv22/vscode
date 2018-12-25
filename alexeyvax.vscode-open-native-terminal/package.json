@@ -1,18 +1,43 @@
 {
 	"contributes": {
-		"commands": [],
+		"commands": [
+			{
+				"command": "extension.openNativeTerminal",
+				"title": "Open in External Terminal"
+			},
+			{
+				"command": "extension.openNativeTerminalOnRootFolder",
+				"title": "Open in External Terminal",
+				"icon": {
+					"light": "./assets/icon-light.png",
+					"dark": "./assets/icon-dark.png"
+				}
+			}
+		],
 		"menus": {
 			"commandPalette": [
 				{
 					"command": "extension.openNativeTerminal",
 					"when": "editorHasSelection"
-				},
+				}
+			],
+			"explorer/context": [
 				{
-					"command": "extension.openNativeTerminalOnRootFolder",
-					"when": "editorHasSelection"
+					"command": "extension.openNativeTerminal"
 				}
 			],
 			"editor/context": [
+				{
+					"command": "extension.openNativeTerminal"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "extension.openNativeTerminalOnRootFolder",
+					"group": "navigation"
+				}
+			],
+			"editor/title/context": [
 				{
 					"command": "extension.openNativeTerminal"
 				}
